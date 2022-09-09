@@ -27,7 +27,7 @@ router.put('/:id', async (req, res) => {
 // DELETE
 router.delete('/:id', async (req, res) => {
   try {
-    await Hotel.findByIdAndDelete(req.params.id, { $set: req.body }, { new: true });
+    await Hotel.findByIdAndDelete(req.params.id);
     res.status(200).json('Hotel has been deleted');
   } catch (err) {
     res.status(500).json(err);
@@ -45,7 +45,9 @@ router.get('/:id', async (req, res) => {
 });
 
 // GET ALL
-router.get('/', async (req, res) => {
+router.get('/', async (req, res, next) => {
+  //   console.log("Hi! I'm a hotel route");
+  //   next();
   try {
     const hotels = await Hotel.find();
     res.status(200).json(hotels);

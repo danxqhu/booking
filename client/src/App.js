@@ -2,6 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import List from './pages/list/List';
+import Hotel from './pages/hotel/Hotel';
+
+import './App.scss';
 
 function App() {
   return (
@@ -9,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/hotels" element={<List></List>}></Route>
+        <Route path="/hotels/:id" element={<Hotel></Hotel>}></Route>
       </Routes>
     </BrowserRouter>
   );

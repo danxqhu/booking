@@ -5,6 +5,8 @@ import Featured from '../../components/featured/Featured';
 import './home.scss';
 import PropertyList from '../../components/propertyList/PropertyList';
 import FeaturedProperties from '../../components/featuredProperties/FeaturedProperties';
+import MailList from '../../components/mailList/MailList';
+import Footer from '../../components/footer/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
         <PropertyList></PropertyList>
         <h1 className="homeTitle">Homes guests love</h1>
         <FeaturedProperties></FeaturedProperties>
+        <MailList></MailList>
+        <Footer></Footer>
       </div>
     </div>
   );

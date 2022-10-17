@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/header/Header';
+import { DateRange } from 'react-date-range';
 import './list.scss';
 import { useLocation } from 'react-router-dom';
+import { format } from 'date-fns';
 
 export default function List() {
   const location = useLocation();
-  // const [destination, setDestination] = use;
+  const [destination, setDestination] = useState(location.state.destination);
+  const [date, setDate] = useState(location.state.date);
+  const [openDate, setOpenDate] = useState(false);
+  const [options, setOptions] = useState(location.state.options);
   console.log(location);
   return (
     <div>
@@ -17,11 +22,16 @@ export default function List() {
           <div className="listSearch">
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
-              <label htmlFor="">Destination</label>
-              <input type="text" />
+              <label>Destination</label>
+              <input type="text" placeholder={destination} />
             </div>
             <div className="lsItem">
               <label htmlFor="">Check-in Date</label>
+              <span onClick={() => setOpenDate(!openDate)}>{`${format(date[0].startDate, 'MM/dd/yyyy')} to ${format(
+                date[0].endDate,
+                'MM/dd/yyyy',
+              )}`}</span>
+              {openDate && <DateRange onChange={item => setDate([item.selection])} minDate={new Date()} ranges={date} />}
             </div>
           </div>
           <div className="listResult"></div>

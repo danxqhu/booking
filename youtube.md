@@ -6,6 +6,6 @@ https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PL_4UbyaLRjPFW6ZT_W5ZoxSLyJO8ZG
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&ab_channel=LamaDev
 
-2022/9/25 1:23:04
+2022/10/24 √
 
 https://github.com/safak/youtube2022/tree/react-booking-ui

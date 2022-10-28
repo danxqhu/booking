@@ -1,7 +1,10 @@
 import React from 'react';
+import useFetch from '../../hooks/useFetch';
 import './featured.scss';
 
 export default function Featured() {
+  const { data, loading, error } = useFetch('/hotels/countByCity?cities=Berlin,Madrid,London');
+  console.log(data);
   return (
     <div className="featured">
       <div className="featuredItem">

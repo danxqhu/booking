@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PL_4UbyaLRjPFW6ZT_W5ZoxSLyJO8ZG0TO&index=5&t=3330s&ab_channel=LamaDev
 
+2022/11/1 1:39:03
+
 2022/10/28 1:36:56
 2022/10/25 1:31:10
 2022/9/25 1:26:10

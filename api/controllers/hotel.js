@@ -68,6 +68,7 @@ export const countByType = async (req, res, next) => {
     const resortCount = await Hotel.countDocuments({ type: 'resorts' });
     const villaCount = await Hotel.countDocuments({ type: 'villas' });
     const cabinCount = await Hotel.countDocuments({ type: 'cabins' });
+    // here can be a bug
 
     res.status(200).json([
       { type: 'hotels', count: hotelCount },

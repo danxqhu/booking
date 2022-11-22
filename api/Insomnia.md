@@ -63,3 +63,7 @@ Insomnia
 10. DELETE ROOM(localhost:8800/api/rooms/63306d93d0b0b01a8add15f8/631aa9a366f9a272e5cf339a )(DELETE)
 
 11. GET HOTEL COUNT(localhost:8800/api/hotels/countByCity?cities=Berlin,Madrid,London)(GET)
+
+12. GET HOTEL COUNT(localhost:8800/api/hotels/countByType)(GET)
+
+13. GET ALL HOTELS(localhost:8800/api/hotels?featured=true&limit=1)(GET)

@@ -67,3 +67,5 @@ Insomnia
 12. GET HOTEL COUNT(localhost:8800/api/hotels/countByType)(GET)
 
 13. GET ALL HOTELS(localhost:8800/api/hotels?featured=true&limit=1)(GET)
+
+14. GET ALL HOTELS(localhost:8800/api/hotels?featured=true&limit=4&min=10&max=200)(GET)

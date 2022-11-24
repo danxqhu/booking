@@ -23,6 +23,7 @@ export default function List() {
   const handleClick = () => {
     reFetch();
   };
+  console.log('dates:', dates);
   return (
     <div>
       <Navbar />
@@ -37,7 +38,7 @@ export default function List() {
             </div>
             <div className="lsItem">
               <label htmlFor="">Check-in Date</label>
-              <span onClick={() => setOpenDate(!openDate)}>{`${format(dates[0].startDates, 'MM/dd/yyyy')} to ${format(
+              <span onClick={() => setOpenDate(!openDate)}>{`${format(dates[0].startDate, 'MM/dd/yyyy')} to ${format(
                 dates[0].endDate,
                 'MM/dd/yyyy',
               )}`}</span>

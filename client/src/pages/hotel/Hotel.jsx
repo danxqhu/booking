@@ -51,7 +51,7 @@ export default function Hotel() {
   const id = location.pathname.split('/')[2];
   const { data, loading, error } = useFetch(`/hotels/find/${id}`);
 
-  const { dates } = useContext(SearchContext);
+  const { dates, options } = useContext(SearchContext);
 
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
   function dayDifference(date1, date2) {
@@ -60,7 +60,7 @@ export default function Hotel() {
     return diffDays;
   }
 
-  console.log(dayDifference(dates[0].endDate, dates[0].startDate));
+  const days = dayDifference(dates[0].endDate, dates[0].startDate);
 
   const handleMove = direction => {
     let newSlideNumber;
@@ -116,10 +116,10 @@ export default function Hotel() {
                 <p className="hotelDesc">{data.desc}</p>
               </div>
               <div className="hotelDetailsPrice">
-                <h1>Perfect for a 1-night stay!</h1>
+                <h1>Perfect for a {days}-night stay!</h1>
                 <span>Top Location: Highly rated by recent guests (8.8)</span>
                 <h2>
-                  <b>$945</b> (1 night)
+                  <b>${days * data.cheapestPrice * options.room}</b> ({days} nights)
                 </h2>
                 <button>Reserve or Book Now!</button>
               </div>

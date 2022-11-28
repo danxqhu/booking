@@ -9,6 +9,7 @@ import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { format } from 'date-fns';
 import { SearchContext } from '../../context/SearchContext';
+import { AuthContext } from '../../context/AuthContext';
 
 export default function Header({ type }) {
   const [destination, setDestination] = useState('');
@@ -42,6 +43,7 @@ export default function Header({ type }) {
     dispatch({ type: 'NEW_SEARCH', payload: { destination, dates, options } });
     navigate('/hotels', { state: { destination, dates, options } });
   };
+  const { user } = useContext(AuthContext);
   return (
     <div className="header">
       <div className={type === 'list' ? 'headerContainer listMode' : 'headerContainer'}>
@@ -74,7 +76,7 @@ export default function Header({ type }) {
             <p className="headerDesc">
               Get rewarded for your travels - unlock instant savings of 10% or more with a free Lamabooking account
             </p>
-            <button className="headerBtn">Sign in / Register</button>
+            {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
               <div className="headerSearchItem">
                 <FontAwesomeIcon icon={faBed} className="headerIcon" />

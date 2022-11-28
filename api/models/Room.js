@@ -17,7 +17,7 @@ const RoomSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    rommNumbers: [
+    roomNumbers: [
       {
         number: Number,
         unavailableDates: {

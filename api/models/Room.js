@@ -33,6 +33,7 @@ const RoomSchema = new mongoose.Schema(
   {
     number: 101,
     // unavailableDates: [01.052022,02.05.2022],
+    unavailableDates: [],
   },
   {
     number: 102,

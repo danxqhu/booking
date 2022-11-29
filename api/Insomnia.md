@@ -71,3 +71,8 @@ Insomnia
 14. GET ALL HOTELS(localhost:8800/api/hotels?featured=true&limit=4&min=10&max=200)(GET)
 
 15. GET HOTEL ROOMS(localhost:8800/api/hotels/room/631aa9a366f9a272e5cf339a)(GET)
+
+16. ADD DATE (localhost:8800/api/rooms/availability/638456b56e02377183c059fc) (PUT)
+    {
+    "dates":["2022-11-28T06:00:32.668Z","2022-11-28T06:00:32.668Z"]
+    }

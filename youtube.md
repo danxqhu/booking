@@ -18,7 +18,8 @@ https://www.youtube.com/watch?v=k3Vfj-e1Ma4&list=PL_4UbyaLRjPFW6ZT_W5ZoxSLyJO8ZG
 
 https://www.youtube.com/watch?v=k3Vfj-e1Ma4&ab_channel=LamaDev
 
-2022/12/1 42:24
+2022/12/6 1:03:46
+2022/12/5 42:24
 2022/12/1 11:40
 
 https://www.youtube.com/watch?v=RkWpJ4XUHuw&ab_channel=LamaDev

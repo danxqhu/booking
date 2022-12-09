@@ -12,6 +12,7 @@ import AllInboxIcon from '@material-ui/icons/AllInbox';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import CardTravelIcon from '@material-ui/icons/CardTravel';
 import ErrorIcon from '@material-ui/icons/Error';
+import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   return (
@@ -20,10 +21,12 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem active">
-              <LineStyleIcon className="sidebarIcon"></LineStyleIcon>
-              Home
-            </li>
+            <Link to="/" className="link">
+              <li className="sidebarListItem active">
+                <LineStyleIcon className="sidebarIcon"></LineStyleIcon>
+                Home
+              </li>
+            </Link>
             <li className="sidebarListItem">
               <TimelineIcon className="sidebarIcon"></TimelineIcon>
               Analytics
@@ -37,14 +40,19 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <PermIdentityIcon className="sidebarIcon"></PermIdentityIcon>
-              Users
-            </li>
-            <li className="sidebarListItem">
-              <StorefrontIcon className="sidebarIcon"></StorefrontIcon>
-              Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebarListItem">
+                <PermIdentityIcon className="sidebarIcon"></PermIdentityIcon>
+                Users
+              </li>
+            </Link>
+            <Link to="/products" className="link">
+              <li className="sidebarListItem">
+                <StorefrontIcon className="sidebarIcon"></StorefrontIcon>
+                Products
+              </li>
+            </Link>
+
             <li className="sidebarListItem">
               <AttachMoneyIcon className="sidebarIcon"></AttachMoneyIcon>
               Transactions

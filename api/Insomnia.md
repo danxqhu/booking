@@ -30,12 +30,20 @@ Insomnia
 
 6.  REGISTER (localhost:8800/api/auth/register)(POST)
 
-        	{
-        "username":"John1",
-        "email":"john1@gmail.com",
-        "password":"12345"
-
-    }
+{
+"username":"John1",
+"email":"john1@gmail.com",
+"password":"12345"
+}
+{
+"username":"John3",
+"email":"john3@gmail.com",
+"password":"12345",
+"country":"USA",
+"city":"New York",
+"phone":"+12345678",
+"img":"https://images.pexels.com/photos/11781395/pexels-photo-11781395.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+}
 
 7.  LOGIN (localhost:8800/api/auth/login)(POST)
 

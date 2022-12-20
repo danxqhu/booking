@@ -45,7 +45,7 @@ export default function Hotel() {
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   const handleOpen = index => {
-    console.log(index);
+    // console.log(index);
     setSlideNumber(index);
     setOpen(true);
   };

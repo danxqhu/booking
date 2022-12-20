@@ -23,7 +23,7 @@ const Datatable = ({ columns }) => {
   useEffect(() => {
     setList(data);
   }, [data]);
-  console.log(data);
+  // console.log(data);
 
   const actionColumn = [
     {

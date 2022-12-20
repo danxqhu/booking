@@ -34,7 +34,7 @@ const New = ({ inputs, title }) => {
     }
   };
 
-  console.log(info);
+  // console.log(info);
 
   return (
     <div className="new">

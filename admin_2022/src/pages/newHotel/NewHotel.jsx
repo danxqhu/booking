@@ -22,7 +22,7 @@ const NewHotel = ({}) => {
     const value = Array.from(e.target.selectedOptions, option => option.value);
     setRooms(value);
   };
-  console.log(files);
+  // console.log(files);
 
   const handleClick = async e => {
     e.preventDefault();

@@ -23,7 +23,7 @@ export default function List() {
   const handleClick = () => {
     reFetch();
   };
-  console.log('dates:', dates);
+  // console.log('dates:', dates);
   return (
     <div>
       <Navbar />

@@ -52,7 +52,13 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(8800, () => {
+// app.use(express.static(path.join(__dirname, '/client/build')));
+
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
+// });
+
+app.listen(process.env.PORT || 8800, () => {
   connect();
   console.log('Connected to backend.');
 });

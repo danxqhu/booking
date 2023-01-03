@@ -4,6 +4,7 @@ import './FeaturedProperties.scss';
 
 export default function FeaturedProperties() {
   const { data, loading, error } = useFetch('/hotels?featured=true&limit=100');
+  // console.log('data', data);
   return (
     <div className="fp">
       {loading ? (
